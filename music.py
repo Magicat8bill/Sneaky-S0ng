@@ -62,6 +62,7 @@ def create_musicxml(pitches, rhythms, output_file):
                     tie_note.quarterLength = n.quarterLength
                     tie_note.tie = tie.Tie('stop')
                     measure.append(tie_note)
+                    break
                 else:
                     measure.append(n)
                     break
@@ -69,7 +70,7 @@ def create_musicxml(pitches, rhythms, output_file):
     score.write('musicxml', fp=output_file)
 
 if __name__ == "__main__":
-    pitches = "Db4 Bb4 A4 D##4 C4 A4 D##4 C4 Cb4 A4 G#4 C4 D##4 D#4 D4 Db4 D#4 D4 G4 D#4 Fb4"
+    pitches = "Db Bb A D## C4 A D## C4 Cb A G# C D## D# D Db D# D G D# Fb"
     rhythms = "h q h 16 16 h 16 16 w h w 16 16 h 8 h h 8 w h 16"
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
