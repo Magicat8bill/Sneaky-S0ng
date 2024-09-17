@@ -70,8 +70,8 @@ def create_musicxml(pitches, rhythms, output_file):
     score.write('musicxml', fp=output_file)
 
 if __name__ == "__main__":
-    pitches = "Db Bb A D## C4 A D## C4 Cb A G# C D## D# D Db D# D G D# Fb"
-    rhythms = "h q h 16 16 h 16 16 w h w 16 16 h 8 h h 8 w h 16"
+    pitches = input("Enter pitches (e.g., Db Bb A): ")
+    rhythms = input("Enter rhythms (e.g., q h 8 r): ")
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")
