@@ -1,4 +1,4 @@
-from music21 import stream, note, tie
+from music21 import *
 
 def create_musicxml(pitches, rhythms, output_file):
     """
@@ -15,7 +15,8 @@ def create_musicxml(pitches, rhythms, output_file):
         '8': 0.5,
         'r': 'rest',
         'w': 4.0,
-        '16': 0.25
+        '16': 0.25,
+        '.': 1.5
     }
     
     score = stream.Score()
@@ -23,6 +24,7 @@ def create_musicxml(pitches, rhythms, output_file):
     score.append(part)
     
     measure = stream.Measure()
+    measure.timeSignature = meter.TimeSignature('4/4')
     part.append(measure)
     
     for pitch, rhythm in zip(pitches.split(), rhythms.split()):
@@ -68,6 +70,7 @@ def create_musicxml(pitches, rhythms, output_file):
                     break
     
     score.write('musicxml', fp=output_file)
+    score.show()
 
 if __name__ == "__main__":
     pitches = input("Enter pitches (e.g., Db Bb A): ")
