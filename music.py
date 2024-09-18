@@ -1,4 +1,5 @@
 from music21 import *
+import encrypt
 
 def create_musicxml(pitches, rhythms, output_file):
     """
@@ -69,11 +70,14 @@ def create_musicxml(pitches, rhythms, output_file):
                     break
     
     score.write('musicxml', fp=output_file)
-    score.show()
+    # score.show()
 
 if __name__ == "__main__":
-    pitches = input("Enter pitches (e.g., Db Bb A): ")
-    rhythms = input("Enter rhythms (e.g., q h 8 r): ")
+    # pitches = input("Enter pitches (e.g., Db Bb A): ")
+    # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
+    r, p = encrypt.vertion_1("this is our sentence, don't judge!")
+    pitches = p
+    rhythms = r
     output_file = "test_output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")

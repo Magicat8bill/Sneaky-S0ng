@@ -38,7 +38,7 @@ def vertion_1(sentance):
         dash = "G#"
         exclamation = "E"
         colon = "C#"
-        apotrophy = "F"
+        apostrophy = "F"
         semicolon = "Ab"
         open_pern = "G"
         close_pern = "Eb"
@@ -113,6 +113,10 @@ def vertion_1(sentance):
             pitch.append(colon)
         elif letter == ";":
             pitch.append(semicolon)
+        elif letter == ",":
+            pitch.append(comma)
+        elif letter == "'":
+            pitch.append(apostrophy)
 
         return pitch
 
@@ -153,7 +157,7 @@ def vertion_1(sentance):
         dash = "."
         exclamation = "."
         colon = "."
-        apotrophy = "."
+        apostrophy = "."
         semicolon = "."
         open_pern = "."
         close_pern = "."
@@ -228,6 +232,10 @@ def vertion_1(sentance):
             rhythm.append(colon)
         elif letter == ";":
             rhythm.append(semicolon)
+        elif letter == ",":
+            rhythm.append(comma)
+        elif letter == "'":
+            pitch.append(apostrophy)
 
         return rhythm
 
