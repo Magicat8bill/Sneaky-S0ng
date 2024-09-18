@@ -235,7 +235,7 @@ def vertion_1(sentance):
         elif letter == ",":
             rhythm.append(comma)
         elif letter == "'":
-            pitch.append(apostrophy)
+            rhythm.append(apostrophy)
 
         return rhythm
 
@@ -248,6 +248,8 @@ def vertion_1(sentance):
     # print("Pitches:", p)
     r = ' '.join(rhythm)
     # print("Rhythms:", r)
+    print(p)
     return p, r
 
-print(vertion_1("this is our sentence, don't judge!"))
+# print(vertion_1("this is our sentence, don't judge!"))
+vertion_1("this is our sentence, don't judge!")
