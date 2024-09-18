@@ -114,7 +114,7 @@ def vertion_1(sentance):
         elif letter == ";":
             pitch.append(semicolon)
 
-        return ','.join(pitch)
+        return pitch
 
         
     def beat(letter):
@@ -229,13 +229,17 @@ def vertion_1(sentance):
         elif letter == ";":
             rhythm.append(semicolon)
 
-        return ','.join(rhythm)
+        return rhythm
 
         
-    length = len(sentance.split())
+    length = len(sentance.split(" "))
     for i in sentance:
         pitches(i)
-        print("Pitches", pitch)
-        print("Rhythms", rhythm)
+        beat(i)
+    p = ' '.join(pitch)
+    # print("Pitches:", p)
+    r = ' '.join(rhythm)
+    # print("Rhythms:", r)
+    return p, r
 
-vertion_1("this is our sentence, don't judge!")
+print(vertion_1("this is our sentence, don't judge!"))
