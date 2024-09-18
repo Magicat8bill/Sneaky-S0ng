@@ -31,7 +31,7 @@ def create_musicxml(pitches, rhythms, output_file):
         dur = rhythm_map.get(rhythm)
         if dur is None:
             print(f"Invalid rhythm: {rhythm}")
-            continue
+            exit()
         
         if dur == 'rest':
             n = note.Rest()
@@ -42,7 +42,6 @@ def create_musicxml(pitches, rhythms, output_file):
                 pitch += '4'  # Default to octave 4 if not specified
             n = note.Note(pitch)
             n.quarterLength = dur
-            
             while n.quarterLength > 0:
                 remaining_in_measure = 4.0 - measure.duration.quarterLength
                 if remaining_in_measure <= 0:
