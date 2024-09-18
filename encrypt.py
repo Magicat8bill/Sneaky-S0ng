@@ -250,6 +250,3 @@ def vertion_1(sentance):
     # print("Rhythms:", r)
     print(p)
     return p, r
-
-# print(vertion_1("this is our sentence, don't judge!"))
-vertion_1("this is our sentence, don't judge!")
