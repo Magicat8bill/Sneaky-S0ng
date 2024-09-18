@@ -74,6 +74,6 @@ def create_musicxml(pitches, rhythms, output_file):
 if __name__ == "__main__":
     pitches = input("Enter pitches (e.g., Db Bb A): ")
     rhythms = input("Enter rhythms (e.g., q h 8 r): ")
-    output_file = "output.xml"
+    output_file = "test_output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")
