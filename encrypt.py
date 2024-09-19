@@ -31,16 +31,16 @@ def vertion_1(sentance):
         y = "C"
         z = "B##"
         # Numbers
-        zero = ""
-        one = ""
-        two = ""
-        three = "" 
-        four = ""
-        five = ""
-        six = ""
-        seven = "" 
-        eight = ""
-        nine = ""
+        zero = "A"
+        one = "D--"
+        two = "Eb"
+        three = "Gb" 
+        four = "A#"
+        five = "Db"
+        six = "Cb"
+        seven = "Bb" 
+        eight = "E"
+        nine = "F"
         # Punctuation/Spaces
         space = "C"
         comma = "A"
@@ -58,6 +58,7 @@ def vertion_1(sentance):
         percent = "G##"
         quotes = "D"
 
+        # Leters
         if letter.upper() == "A":
             pitch.append(a)
         elif letter.upper() == "B":
@@ -110,7 +111,28 @@ def vertion_1(sentance):
             pitch.append(y)
         elif letter.upper() == "Z":
             pitch.append(z)
-        elif letter == " ":
+        # Numbers
+        elif letter == "0":
+            pitch.append(zero)
+        elif letter == "1":
+            pitch.append(one)
+        elif letter == "2":
+            pitch.append(two)
+        elif letter == "3":
+            pitch.append(three)
+        elif letter == "4":
+            pitch.append(four)
+        elif letter == "5":
+            pitch.append(five)
+        elif letter == "6":
+            pitch.append(six)
+        elif letter == "7":
+            pitch.append(seven)
+        elif letter == "8":
+            pitch.append(eight)
+        elif letter == "9":
+            pitch.append(nine)
+        # Other
             pitch.append(space)
         elif letter == ".":
             pitch.append(period)
@@ -160,6 +182,17 @@ def vertion_1(sentance):
         x = "h"
         y = "w"
         z = "16"
+        # Numbers
+        zero = "8"
+        one = "8"
+        two = "8"
+        three = "8" 
+        four = "8"
+        five = "8"
+        six = "8"
+        seven = "8" 
+        eight = "8"
+        nine = "8"
         # Punctuation/Spaces
         space = "."
         comma = "."
@@ -229,6 +262,28 @@ def vertion_1(sentance):
             rhythm.append(y)
         elif letter.upper() == "Z":
             rhythm.append(z)
+        # Numbers
+        elif letter == "0":
+            rhythm.append(zero)
+        elif letter == "1":
+            rhythm.append(one)
+        elif letter == "2":
+            rhythm.append(two)
+        elif letter == "3":
+            rhythm.append(three)
+        elif letter == "4":
+            rhythm.append(four)
+        elif letter == "5":
+            rhythm.append(five)
+        elif letter == "6":
+            rhythm.append(six)
+        elif letter == "7":
+            rhythm.append(seven)
+        elif letter == "8":
+            rhythm.append(eight)
+        elif letter == "9":
+            rhythm.append(nine)
+        # Other
         elif letter == " ":
             rhythm.append(space)
         elif letter == ".":
