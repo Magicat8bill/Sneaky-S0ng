@@ -30,6 +30,17 @@ def vertion_1(sentance):
         x = "A#"
         y = "C"
         z = "B##"
+        # Numbers
+        zero = ""
+        one = ""
+        two = ""
+        three = "" 
+        four = ""
+        five = ""
+        six = ""
+        seven = "" 
+        eight = ""
+        nine = ""
         # Punctuation/Spaces
         space = "C"
         comma = "A"
