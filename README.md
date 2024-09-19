@@ -1,10 +1,10 @@
 # 🎵 Sneaky $0ng 🎵
 ___
-Sneaky $0ng is a music cypher that will generate a complex song for you, with a secret message hidden inside. Using MuseScore as we did, or other music-making applications Sneaky $0ng can generate sheet music, complete with notations and dynamics. 
+Sneaky $0ng is a music cypher that generates a complex song for you, with a secret message hidden inside. Using MuseScore, as we did, or other music-making applications, Sneaky $0ng can generate sheet music, complete with notations and dynamics. 
 Although we can't promise that your cypher will sound good when played, it will be tough to decypher. This is in part to the complex series of beats utilizing different pitches to create a cypher that is almost impossible for most people to crack. 
 ___
 ### REQUIREMENTS.         
-If you want to be able to use sneaky $0ng you will need some very basic programs to use it. 
+If you want to use sneaky $0ng, you will need some very basic programs. 
 ___
 -  This program must be run in Python3
 -  _____________________________________
@@ -22,3 +22,7 @@ After you have copied the HTTP to your clipboard, you must open up your GitBash 
 ![Screenshot 2024-09-18 145324](https://github.com/user-attachments/assets/7a45f7c6-d41a-4983-8536-b03010999b23)
 ---
 ### USING IT. 
+Once the repository is installed open music.py and run it. Type the sentence you want to encrypt into the terminal when prompted. The program will then update the output.xml file with your encrypted sentence. Open the output.xml file with your musicxml reader to view your code in music notation.
+
+### ACCEPTED CHARACTERS
+Accepted characters include all letters of the English language + spaces, commas, periods, questionmarks, dashes, exclamation points, colons, apostrophes, and semicolons.
