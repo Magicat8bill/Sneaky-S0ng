@@ -23,6 +23,10 @@ def create_musicxml(pitches, rhythms, output_file):
     score = stream.Score()
     part = stream.Part()
     score.append(part)
+
+    score.insert(0, metadata.Metadata())
+    score.metadata.title = 'Cypher'
+    score.metadata.composer = '$neaky $0ng'
     
     measure = stream.Measure()
     measure.timeSignature = meter.TimeSignature('4/4')
@@ -70,7 +74,7 @@ def create_musicxml(pitches, rhythms, output_file):
                     break
     
     score.write('musicxml', fp=output_file)
-    # score.show()
+    score.show()
 
 if __name__ == "__main__":
     sentence = input("Type sentence here: ")
