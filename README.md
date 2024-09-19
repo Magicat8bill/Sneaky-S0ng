@@ -22,6 +22,7 @@ After you have copied the HTTP to your clipboard, you must open up your GitBash 
 ![Screenshot 2024-09-18 145324](https://github.com/user-attachments/assets/7a45f7c6-d41a-4983-8536-b03010999b23)
 ---
 ### USING IT. 
+Once the repository is installed open music.py and run it. Type the sentence you want to encrypt into the terminal when prompted. The program will then update the output.xml file with your encrypted sentence. Open the output.xml file with your musicxml reader to view your code in music notation.
 
 ### ACCEPTED CHARACTERS
-Accepted characters include all letters of the English language + spaces, commas, periods, questionmarks, dashes, exclamation points, colons, apostrophes, and semicolons. Numbers 0-9 are also allowed.
+Accepted characters include all letters of the English language + spaces, commas, periods, questionmarks, dashes, exclamation points, colons, apostrophes, and semicolons.
