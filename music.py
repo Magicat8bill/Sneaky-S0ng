@@ -1,6 +1,12 @@
 from music21 import *
 import encrypt
 
+file = open("config.txt", "r+") 
+lines = file.readline().strip()
+if lines != "1":
+    configure.run()
+    file.write("1")
+
 def create_musicxml(pitches, rhythms, output_file):
     """
     Create a MusicXML file from given pitches and rhythms.
@@ -74,7 +80,8 @@ def create_musicxml(pitches, rhythms, output_file):
                     break
     
     score.write('musicxml', fp=output_file)
-    # score.show()
+    # if lines != "1":
+    #     score.show()
 
 if __name__ == "__main__":
     sentence = input("Type sentence here: ")
