@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">$neaky $0ng</creator>
     <encoding>
-      <encoding-date>2024-09-19</encoding-date>
+      <encoding-date>2024-09-23</encoding-date>
       <software>music21 v.9.1.0</software>
     </encoding>
   </identification>
@@ -19,12 +19,12 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P947801af7af4f2fa1e532f8f65b0e77e">
+    <score-part id="P93b02f58c9fa413305b7b0da48b07730">
       <part-name />
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P947801af7af4f2fa1e532f8f65b0e77e">
+  <part id="P93b02f58c9fa413305b7b0da48b07730">
     <!--========================= Measure 0 ==========================-->
     <measure implicit="no" number="0">
       <attributes>
@@ -36,157 +36,18 @@
       </attributes>
       <note>
         <pitch>
-          <step>D</step>
-          <alter>-1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>20160</duration>
-        <type>half</type>
-        <accidental>flat</accidental>
-      </note>
-      <note>
-        <pitch>
-          <step>D</step>
-          <alter>1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>20160</duration>
-        <type>half</type>
-        <accidental>sharp</accidental>
-      </note>
-    </measure>
-    <!--========================= Measure 0 ==========================-->
-    <measure implicit="no" number="0">
-      <note>
-        <pitch>
-          <step>D</step>
-          <alter>2</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2520</duration>
-        <type>16th</type>
-        <accidental>double-sharp</accidental>
-      </note>
-      <note>
-        <pitch>
-          <step>D</step>
-          <alter>-1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>20160</duration>
-        <type>half</type>
-        <accidental>flat</accidental>
-      </note>
-      <note>
-        <pitch>
-          <step>E</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>15120</duration>
-        <type>quarter</type>
-        <dot />
-      </note>
-      <note>
-        <pitch>
           <step>B</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>2520</duration>
-        <tie type="start" />
-        <type>16th</type>
-        <notations>
-          <tied type="start" />
-        </notations>
-      </note>
-    </measure>
-    <!--========================= Measure 0 ==========================-->
-    <measure implicit="no" number="0">
-      <note>
-        <pitch>
-          <step>B</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>10080</duration>
-        <tie type="stop" />
-        <tie type="start" />
-        <type>quarter</type>
-        <notations>
-          <tied type="stop" />
-          <tied type="start" />
-        </notations>
-      </note>
-      <note>
-        <pitch>
-          <step>B</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>2520</duration>
-        <tie type="stop" />
-        <type>16th</type>
-        <notations>
-          <tied type="stop" />
-        </notations>
-      </note>
-      <note>
-        <pitch>
-          <step>A</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>15120</duration>
-        <type>quarter</type>
-        <dot />
-      </note>
-      <note>
-        <pitch>
-          <step>F</step>
           <alter>-1</alter>
           <octave>4</octave>
         </pitch>
         <duration>10080</duration>
-        <tie type="start" />
         <type>quarter</type>
         <accidental>flat</accidental>
-        <notations>
-          <tied type="start" />
-        </notations>
-      </note>
-      <note>
-        <pitch>
-          <step>F</step>
-          <alter>-1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2520</duration>
-        <tie type="stop" />
-        <tie type="start" />
-        <type>16th</type>
-        <notations>
-          <tied type="stop" />
-          <tied type="start" />
-        </notations>
-      </note>
-    </measure>
-    <!--========================= Measure 0 ==========================-->
-    <measure implicit="no" number="0">
-      <note>
-        <pitch>
-          <step>F</step>
-          <alter>-1</alter>
-          <octave>4</octave>
-        </pitch>
-        <duration>2520</duration>
-        <tie type="stop" />
-        <type>16th</type>
-        <notations>
-          <tied type="stop" />
-        </notations>
       </note>
       <note print-object="no" print-spacing="yes">
         <rest />
-        <duration>37800</duration>
+        <duration>30240</duration>
         <type>half</type>
-        <dot />
-        <dot />
         <dot />
       </note>
     </measure>
