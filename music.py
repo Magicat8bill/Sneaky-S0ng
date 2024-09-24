@@ -1,11 +1,7 @@
 from music21 import *
 import encrypt
 
-file = open("config.txt", "r+") 
-lines = file.readline().strip()
-if lines != "1":
-    configure.run()
-    file.write("1")
+reader = input("Do you have a musicxml reader? Y or N: ")
 
 def create_musicxml(pitches, rhythms, output_file):
     """
@@ -80,8 +76,8 @@ def create_musicxml(pitches, rhythms, output_file):
                     break
     
     score.write('musicxml', fp=output_file)
-    # if lines != "1":
-    #     score.show()
+    if reader.upper() == "Y":
+        score.show()
 
 if __name__ == "__main__":
     sentence = input("Type sentence here: ")
