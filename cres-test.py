@@ -37,10 +37,6 @@ cresc_start = dynamics.Crescendo()
 for n in notes[:3]:
     n.expressions.append(cresc_start)
 
-diminuendo = dynamics.Diminuendo()
-for n in notes[3:]:
-    n.expressions.append(diminuendo)
-
 my_stream = stream.Stream()
 for n in notes:
     my_stream.append(n)
@@ -48,3 +44,8 @@ for n in notes:
 my_stream = stream.Stream()
 for n in notes:
     my_stream.append(n)
+
+output_file = "output.musicxml"
+
+my_stream.write('musicxml', fp=output_file)
+
