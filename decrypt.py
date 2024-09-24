@@ -1,9 +1,9 @@
 from music21 import *
 
-pitch = []
+pitc = []
 rhythm = []
 
-def vertion_1(sentance):
+def vertion_1(lete, ryth):
     def pitches(letter):
         # Letters
         a = "A--"
@@ -62,99 +62,99 @@ def vertion_1(sentance):
 
         # Leters
         if letter.upper() == a:
-            pitch.append("A")
+            pitc.append("A")
         elif letter.upper() == b:
-            pitch.append("B")
+            pitc.append("B")
         elif letter.upper() == c:
-            pitch.append("C")
+            pitc.append("C")
         elif letter.upper() == d:
-            pitch.append("D")
+            pitc.append("D")
         elif letter.upper() == e:
-            pitch.append("E")
+            pitc.append("E")
         elif letter.upper() == f:
-            pitch.append("F")
+            pitc.append("F")
         elif letter.upper() == g:
-            pitch.append("G")
+            pitc.append("G")
         elif letter.upper() == h:
-            pitch.append("H")
+            pitc.append("H")
         elif letter.upper() == i:
-            pitch.append("I")
+            pitc.append("I")
         elif letter.upper() == j:
-            pitch.append("J")
+            pitc.append("J")
         elif letter.upper() == k:
-            pitch.append("K")
+            pitc.append("K")
         elif letter.upper() == l:
-            pitch.append("L")
+            pitc.append("L")
         elif letter.upper() == m:
-            pitch.append("M")
+            pitc.append("M")
         elif letter.upper() == n:
-            pitch.append("N")
+            pitc.append("N")
         elif letter.upper() == o:
-            pitch.append("O")
+            pitc.append("O")
         elif letter.upper() == p:
-            pitch.append("P")
+            pitc.append("P")
         elif letter.upper() == q:
-            pitch.append("Q")
+            pitc.append("Q")
         elif letter.upper() == r:
-            pitch.append("R")
+            pitc.append("R")
         elif letter.upper() == s:
-            pitch.append("S")
+            pitc.append("S")
         elif letter.upper() == t:
-            pitch.append("T")
+            pitc.append("T")
         elif letter.upper() == u:
-            pitch.append("U")
+            pitc.append("U")
         elif letter.upper() == v:
-            pitch.append("V")
+            pitc.append("V")
         elif letter.upper() == w:
-            pitch.append("W")
+            pitc.append("W")
         elif letter.upper() == x:
-            pitch.append("X")
+            pitc.append("X")
         elif letter.upper() == y:
-            pitch.append("Y")
+            pitc.append("Y")
         elif letter.upper() == z:
-            pitch.append("Z")
+            pitc.append("Z")
         # Numbers
         elif letter == zero:
-            pitch.append("0")
+            pitc.append("0")
         elif letter == one:
-            pitch.append("1")
+            pitc.append("1")
         elif letter == two:
-            pitch.append("2")
+            pitc.append("2")
         elif letter == three:
-            pitch.append("3")
+            pitc.append("3")
         elif letter == four:
-            pitch.append("4")
+            pitc.append("4")
         elif letter == five:
-            pitch.append("5")
+            pitc.append("5")
         elif letter == six:
-            pitch.append("6")
+            pitc.append("6")
         elif letter == seven:
-            pitch.append("7")
+            pitc.append("7")
         elif letter == eight:
-            pitch.append("8")
+            pitc.append("8")
         elif letter == nine:
-            pitch.append("9")
+            pitc.append("9")
         # Other
         elif letter == space:
-            pitch.append(" ")
+            pitc.append(" ")
         elif letter == period:
-            pitch.append(".")
+            pitc.append(".")
         elif letter == questionmark:
-            pitch.append("?")
+            pitc.append("?")
         elif letter == dash:
-            pitch.append("-")
+            pitc.append("-")
         elif letter == exclamation:
-            pitch.append("!")
+            pitc.append("!")
         elif letter == colon:
-            pitch.append(":")
+            pitc.append(":")
         elif letter == semicolon:
-            pitch.append(";")
+            pitc.append(";")
         elif letter == comma:
-            pitch.append(",")
+            pitc.append(",")
         elif letter == apostrophy:
-            pitch.append("'")
+            pitc.append("'")
 
-        return pitch
+        return pitc
 
 
         
@@ -214,57 +214,57 @@ def vertion_1(sentance):
         percent = "."
         quotes = "."   
 
-        if letter.upper() == a:
+        if letter == a:
             rhythm.append("A")
-        elif letter.upper() == b:
+        elif letter == b:
             rhythm.append("B")
-        elif letter.upper() == c:
+        elif letter == c:
             rhythm.append("C")
-        elif letter.upper() == d:
+        elif letter == d:
             rhythm.append("D")
-        elif letter.upper() == e:
+        elif letter == e:
             rhythm.append("E")
-        elif letter.upper() == f:
+        elif letter == f:
             rhythm.append("F")
-        elif letter.upper() == g:
+        elif letter == g:
             rhythm.append("G")
-        elif letter.upper() == h:
+        elif letter == h:
             rhythm.append("H")
-        elif letter.upper() == i:
+        elif letter == i:
             rhythm.append("I")
-        elif letter.upper() == j:
+        elif letter == j:
             rhythm.append("J")
-        elif letter.upper() == k:
+        elif letter == k:
             rhythm.append("K")
-        elif letter.upper() == l:
+        elif letter == l:
             rhythm.append("L")
-        elif letter.upper() == m:
+        elif letter == m:
             rhythm.append("M")
-        elif letter.upper() == n:
+        elif letter == n:
             rhythm.append("N")
-        elif letter.upper() == o:
+        elif letter == o:
             rhythm.append("O")
-        elif letter.upper() == p:
+        elif letter == p:
             rhythm.append("P")
-        elif letter.upper() == q:
+        elif letter == q:
             rhythm.append("Q")
-        elif letter.upper() == r:
+        elif letter == r:
             rhythm.append("R")
-        elif letter.upper() == s:
+        elif letter == s:
             rhythm.append("S")
-        elif letter.upper() == t:
+        elif letter == t:
             rhythm.append("T")
-        elif letter.upper() == u:
+        elif letter == u:
             rhythm.append("U")
-        elif letter.upper() == v:
+        elif letter == v:
             rhythm.append("V")
-        elif letter.upper() == w:
+        elif letter == w:
             rhythm.append("W")
-        elif letter.upper() == x:
+        elif letter == x:
             rhythm.append("X")
-        elif letter.upper() == y:
+        elif letter == y:
             rhythm.append("Y")
-        elif letter.upper() == z:
+        elif letter == z:
             rhythm.append("Z")
         # Numbers
         elif letter == zero:
@@ -307,18 +307,22 @@ def vertion_1(sentance):
         elif letter == apostrophy:
             rhythm.append("'")
 
+
         return rhythm
 
-    length = len(sentance.split(" "))
-    for i in sentance:
+    length = len(lete.split(" "))
+    for i in lete:
         pitches(i)
+    length = len(ryth.split(" "))
+    for i in ryth:
         beat(i)
-    p = ' '.join(pitch)
+    p = ' '.join(pitc)
     # print("Pitches:", p)
     r = ' '.join(rhythm)
     # print("Rhythms:", r)
     print(p)
-    return p
+    print(r)
+    return p, r
 
 # print(vertion_1())
 
@@ -336,5 +340,40 @@ p1 = " ".join(p)
 r1 = " ".join(r)
 # print(p1)
 # print(r1)
+original_string = p1
+words = original_string.split()
+modified_words = [word.replace('4', '') for word in words]
+modified_string = ' '.join(modified_words)
 
-vertion_1(r1)
+# print("Modified string:", modified_string)
+
+rhythm_map = {
+    'q': 1.0,
+    'h': 2.0,
+    '8': 0.5,
+    'r': 'rest',
+    'w': 4.0,
+    '16': 0.25,
+    '.': 1.5
+}
+loop = r1.split()
+lis = []
+# print(loop)
+for i in r1:
+    if i == '1':
+        lis.append('q')
+    if i == '2':
+        lis.append('h')
+    if i == '0.5':
+        lis.append('8')
+    if i == '4':
+        lis.append('w')
+    if i == '0.25':
+        lis.append('16')
+    if i == '1.5':
+        lis.append('.')
+r1 = ' '.join(lis)
+r1 = 'h h . q w w q 16'
+l = r1.split()
+print(l)
+vertion_1(modified_string, r1)
