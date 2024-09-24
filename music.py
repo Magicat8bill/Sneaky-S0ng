@@ -3,6 +3,13 @@ import encrypt
 
 reader = input("Do you have a musicxml reader? Y or N: ")
 
+file = open("config.txt", "r+") 
+lines = file.readline().strip()
+if reader.upper() == "Y":
+    if lines != "1":
+        configure.run()
+        file.write("1")
+
 def create_musicxml(pitches, rhythms, output_file):
     """
     Create a MusicXML file from given pitches and rhythms.
@@ -91,4 +98,3 @@ if __name__ == "__main__":
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")
-
