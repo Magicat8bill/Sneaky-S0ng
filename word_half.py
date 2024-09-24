@@ -8,13 +8,13 @@ print (split_list)"""
 
 def split_word(word):
     length = len(word)
-    mid = (length + 1) // 2  # This ensures the second half is longer if the length is odd
+    #floors the odd words so the second half will be longer
+    mid = length // 2  
     first_half = word[:mid]
     second_half = word[mid:]
     return first_half, second_half
 
-# Example usage:
-word = "rabbit"
+word = "the"
 first_half, second_half = split_word(word)
 print("First half:", first_half)
 print("Second half:", second_half)
