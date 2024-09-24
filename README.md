@@ -21,16 +21,37 @@ After you have copied the HTTP to your clipboard, you must open up your GitBash 
 ### USING IT. 
 Once the repository is installed open music.py and run it, type the sentence you want to encrypt into the terminal when prompted. The program will then update the output.xml file with your encrypted sentence. Open the output.xml file with your musicxml reader to view your code in music notation.
 
+---
 ### ACCEPTED CHARACTERS
-Accepted characters include all letters of the English language "A - Z"  and all numbers "0 - 9" along with the following: 
-- spaces
-- , (commas)
-- . (periods)
-- ? (question marks)
-- — (dashes)
-- ! (exclamation marks)
-- : (colon)
-- ; (semicolons)
-- ' (apostrophe)
-  
+Accepted characters include all letters of the English language "A - Z", German letters (ä, ö, ü, ß), and all numbers "0 - 9" along with the following: 
+- ` `
+- `,` (commas)
+- `.` (periods)
+- `?` (question marks)
+- `—` (dashes)
+- `!` (exclamation marks)
+- `:` (colon)
+- `;` (semicolons)
+- `'` (apostrophe)
+- `()` (both parentheses)
+- `{}` (both Curley brackets)
+- `[]` (both brackets)
+- `/` (slashes)
+- `$` (dollar signs)
+- `%` (percent)
+- `"` (quotes)
+- `~` (tilda)
+-  ` (backticks)
+- `@` (AT symbols)
+- `#` (pound)
+- `^` (carrots)
+- `&` (and symbols)
+- `*` (stars)
+- `_` (underscores)
+- `<` (less than symbols)
+- `>` (greater than symbols)
+- `|` (vertical bar)
+- `+` (plus)
+- `=` (equals)
+---
   *Note - negative numbers are accepted because of the dashes, but they do not have their distinct cipher.*
