@@ -95,3 +95,4 @@ if __name__ == "__main__":
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")
+

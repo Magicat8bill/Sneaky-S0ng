@@ -64,7 +64,7 @@ def vertion_1(sentance):
         back_tick = "D F-- G# A# E"
         at = "D B E## Ab"
         pound = "A D-- Gb E#"
-        dollar = "D E F A##"
+        dollar = "G-- Bb Db A# E"
         carrot = "Db Gb E# A--"
         star = "E Fb G A--"
         underscore = "D Bb E Fb"
@@ -138,7 +138,7 @@ def vertion_1(sentance):
         elif letter == "ö":
             pitch.append(ö)
         elif letter == "ü ":
-            pitch.append(ü )
+            pitch.append(ü)
         elif letter == "ß":
             pitch.append(ß)
         # Numbers
@@ -163,6 +163,7 @@ def vertion_1(sentance):
         elif letter == "9":
             pitch.append(nine)
         # Other
+        elif letter == " ":
             pitch.append(space)
         elif letter == ".":
             pitch.append(period)
@@ -275,21 +276,39 @@ def vertion_1(sentance):
         eight = "h w 8 ."
         nine = "q w h 16 ."
         # Punctuation/Spaces
-        space = "."
-        comma = "."
-        period = "."
-        questionmark = "."
-        dash = "."
-        exclamation = "."
-        colon = "."
-        apostrophy = "."
-        semicolon = "."
-        open_pern = "."
-        close_pern = "."
-        slash = "."
-        doller_sign = "."
-        percent = "."
-        quotes = "."   
+        space = "q w 16 8 w h w ."
+        comma = "q h 16 ."
+        period = "8 16 8 8 ."
+        questionmark = "w h q 8 ."
+        dash = "h q w 16 ."
+        exclamation = "16 8 q q ."
+        colon = "16 16 8 q ."
+        apostrophy = "w q 16 16 8 . "
+        semicolon = "q h 8 w ."
+        open_pern = "16 w q 16 h ."
+        closed_pern = "h h 8 8 16 ."
+        slash = "w q h h ."
+        dollar = "q w h h ."
+        percent = "q h h 8 ."
+        quotes = "8 w h 8 ."
+        tilda = "w w w w ."
+        back_tick = "q h h q ."
+        at = "w h q ."  
+        pound = "16 q 8 ." 
+        carrot = "8 h 8 ."
+        and_symbol = "q q h 16 ."
+        star = "q 16 h ."
+        underscore = "w h h ."
+        open_curley_bracket = "q w h 8 ."
+        closed_curley_bracket = "q q h h ."
+        open_bracket = "8 16 h ."
+        closed_bracket = "q h 16 8 ."
+        less_than = "w w q ."
+        greater_than = "q w h 16 16 ."
+        vert_bar = "q q 8 ."
+        equals = "q 16 8 ."
+        plus = " h h h ."
+
 
         if letter.upper() == "A":
             rhythm.append(a)
@@ -343,6 +362,14 @@ def vertion_1(sentance):
             rhythm.append(y)
         elif letter.upper() == "Z":
             rhythm.append(z)
+        elif letter == "ä":
+            rhythm.append(ä)
+        elif letter == "ö":
+            rhythm.append(ö)
+        elif letter == "ü ":
+            rhythm.append(ü)
+        elif letter == "ß":
+            rhythm.append(ß)    
         # Numbers
         elif letter == "0":
             rhythm.append(zero)
@@ -383,6 +410,52 @@ def vertion_1(sentance):
             rhythm.append(comma)
         elif letter == "'":
             rhythm.append(apostrophy)
+        elif letter == "(":
+            rhythm.append(open_pern)
+        elif letter == ")":
+            rhythm.append(closed_pern)
+        elif letter == "/":
+            rhythm.append(slash)
+        elif letter == "$":
+            rhythm.append(dollar)
+        elif letter == "%":
+            rhythm.append(percent)
+        elif letter == '"':
+            rhythm.append(quotes)
+        elif letter == "~":
+            rhythm.append(tilda)
+        elif letter == "`":
+            rhythm.append(back_tick)
+        elif letter == "@":
+            rhythm.append(at)
+        elif letter == "#":
+            rhythm.append(pound)
+        elif letter == "^":
+            rhythm.append(carrot)
+        elif letter == "&":
+            rhythm.append(and_symbol)
+        elif letter == "*":
+            rhythm.append(star)
+        elif letter == "_":
+            rhythm.append(underscore)
+        elif letter == "{":
+            rhythm.append(open_curley_bracket)
+        elif letter == "}":
+            rhythm.append(closed_curley_bracket)
+        elif letter == "[":
+            rhythm.append(open_bracket)
+        elif letter == "]":
+            rhythm.append(closed_bracket)
+        elif letter == "<":
+            rhythm.append(less_than)
+        elif letter == ">":
+            rhythm.append(greater_than)
+        elif letter == "|":
+            rhythm.append(vert_bar)
+        elif letter == "=":
+            rhythm.append(equals)
+        elif letter == "+":
+            rhythm.append(plus)
 
         return rhythm
 
@@ -397,3 +470,12 @@ def vertion_1(sentance):
     # print("Rhythms:", r)
     print(p)
     return p, r
+
+
+
+
+
+
+
+
+
