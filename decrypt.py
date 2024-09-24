@@ -61,218 +61,6 @@ def vertion_1(sentance):
         quotes = "D"
 
         # Leters
-        if letter.upper() == "A":
-            pitch.append(a)
-        elif letter.upper() == "B":
-            pitch.append(b)
-        elif letter.upper() == "C":
-            pitch.append(c)
-        elif letter.upper() == "D":
-            pitch.append(d)
-        elif letter.upper() == "E":
-            pitch.append(e)
-        elif letter.upper() == "F":
-            pitch.append(f)
-        elif letter.upper() == "G":
-            pitch.append(g)
-        elif letter.upper() == "H":
-            pitch.append(h)
-        elif letter.upper() == "I":
-            pitch.append(i)
-        elif letter.upper() == "J":
-            pitch.append(j)
-        elif letter.upper() == "K":
-            pitch.append(k)
-        elif letter.upper() == "L":
-            pitch.append(l)
-        elif letter.upper() == "M":
-            pitch.append(m)
-        elif letter.upper() == "N":
-            pitch.append(n)
-        elif letter.upper() == "O":
-            pitch.append(o)
-        elif letter.upper() == "P":
-            pitch.append(p)
-        elif letter.upper() == "Q":
-            pitch.append(q)
-        elif letter.upper() == "R":
-            pitch.append(r)
-        elif letter.upper() == "S":
-            pitch.append(s)
-        elif letter.upper() == "T":
-            pitch.append(t)
-        elif letter.upper() == "U":
-            pitch.append(u)
-        elif letter.upper() == "V":
-            pitch.append(v)
-        elif letter.upper() == "W":
-            pitch.append(w)
-        elif letter.upper() == "X":
-            pitch.append(x)
-        elif letter.upper() == "Y":
-            pitch.append(y)
-        elif letter.upper() == "Z":
-            pitch.append(z)
-        # Numbers
-        elif letter == "0":
-            pitch.append(zero)
-        elif letter == "1":
-            pitch.append(one)
-        elif letter == "2":
-            pitch.append(two)
-        elif letter == "3":
-            pitch.append(three)
-        elif letter == "4":
-            pitch.append(four)
-        elif letter == "5":
-            pitch.append(five)
-        elif letter == "6":
-            pitch.append(six)
-        elif letter == "7":
-            pitch.append(seven)
-        elif letter == "8":
-            pitch.append(eight)
-        elif letter == "9":
-            pitch.append(nine)
-        # Other
-            pitch.append(space)
-        elif letter == ".":
-            pitch.append(period)
-        elif letter == "?":
-            pitch.append(questionmark)
-        elif letter == "-":
-            pitch.append(dash)
-        elif letter == "!":
-            pitch.append(exclamation)
-        elif letter == ":":
-            pitch.append(colon)
-        elif letter == ";":
-            pitch.append(semicolon)
-        elif letter == ",":
-            pitch.append(comma)
-        elif letter == "'":
-            pitch.append(apostrophy)
-
-        return pitch
-
-        
-    def beat(letter):
-        # Letters
-        a = "8"
-        b = "q"
-        c = "w"
-        d = "16"
-        e = "h"
-        f = "h"
-        g = "16"
-        h = "q"
-        i = "h"
-        j = "q"
-        k = "q"
-        l = "h"
-        m = "16"
-        n = "8"
-        o = "w"
-        p = "q"
-        q = "8"
-        r = "w"
-        s = "16"
-        t = "h"
-        u = "h"
-        v = "w"
-        w = "q"
-        x = "h"
-        y = "w"
-        z = "16"
-        # Numbers
-        zero = "8"
-        one = "8"
-        two = "8"
-        three = "8" 
-        four = "8"
-        five = "8"
-        six = "8"
-        seven = "8" 
-        eight = "8"
-        nine = "8"
-        # Punctuation/Spaces
-        space = "."
-        comma = "."
-        period = "."
-        questionmark = "."
-        dash = "."
-        exclamation = "."
-        colon = "."
-        apostrophy = "."
-        semicolon = "."
-        open_pern = "."
-        close_pern = "."
-        slash = "."
-        doller_sign = "."
-        percent = "."
-        quotes = "."   
-
-pitch = []
-rhythm = []
-
-def vertion_1(sentance):
-    def pitches(letter):
-        # Letters
-        a = "A--"
-        b = "Cb"
-        c = "G"
-        d = "Fb"
-        e = "D#"
-        f = "D"
-        g = "B"
-        h = "Bb"
-        i = "A"
-        j = "F#"
-        k = "E"
-        l = "E"
-        m = "Eb"
-        n = "D"
-        o = "Cb"
-        p = "D"
-        q = "C"
-        r = "G#"
-        s = "D##"
-        t = "Db"
-        u = "A"
-        v = "Fb"
-        w = "Ab"
-        x = "A#"
-        y = "C"
-        z = "B##"
-        # Numbers
-        zero = "A"
-        one = "D--"
-        two = "Eb"
-        three = "Gb" 
-        four = "A#"
-        five = "Db"
-        six = "Cb"
-        seven = "Bb" 
-        eight = "E"
-        nine = "F"
-        # Punctuation/Spaces
-        space = "C"
-        comma = "A"
-        period = "Fb"
-        questionmark = "B"
-        dash = "G#"
-        exclamation = "E"
-        colon = "C#"
-        apostrophy = "F"
-        semicolon = "Ab"
-        open_pern = "G"
-        close_pern = "Eb"
-        slash = "Bb"
-        doller_sign = "G--"
-        percent = "G##"
-        quotes = "D"
-
-        # Leters
         if letter.upper() == a:
             pitch.append("A")
         elif letter.upper() == b:
@@ -521,8 +309,6 @@ def vertion_1(sentance):
 
         return rhythm
 
-
-        
     length = len(sentance.split(" "))
     for i in sentance:
         pitches(i)
@@ -532,10 +318,23 @@ def vertion_1(sentance):
     r = ' '.join(rhythm)
     # print("Rhythms:", r)
     print(p)
-    return p, r
+    return p
 
 # print(vertion_1())
 
-c = converter.parse('C:\Users\BilyeuC\Cypher\output.xml', format='musicxml')
-sAlt = converter.parse(c)
-sAlt.show() # show first 5 measures
+s = converter.parse('output.xml')
+p = []
+r = []
+
+for tN in s.recurse().notes:
+    # Extract the pitch name (e.g., 'A4' instead of <music21.pitch.Pitch A4>)
+    pitch_name = str(tN.pitches[0])
+    p.append(f"{pitch_name}")
+    r.append(f"{tN.duration.quarterLength}")
+    # print(f"{pitch_name}, {tN.duration.quarterLength}")
+p1 = " ".join(p)
+r1 = " ".join(r)
+# print(p1)
+# print(r1)
+
+vertion_1(r1)
