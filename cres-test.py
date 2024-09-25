@@ -48,4 +48,5 @@ for n in notes:
 output_file = "output.musicxml"
 
 my_stream.write('musicxml', fp=output_file)
+my_stream.show()
 
