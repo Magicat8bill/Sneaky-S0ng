@@ -1,4 +1,4 @@
-from music21 import *
+from music21 import * 
 import encrypt
 
 def create_musicxml(pitches, rhythms, output_file):
