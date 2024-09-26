@@ -74,7 +74,7 @@ def create_musicxml(pitches, rhythms, output_file):
                     break
     
     score.write('musicxml', fp=output_file)
-    score.show()
+    # score.show()
 
 if __name__ == "__main__":
     sentence = input("Type sentence here: ")
