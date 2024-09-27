@@ -83,8 +83,11 @@ if __name__ == "__main__":
     p, r = encrypt.vertion_1(sentence)
     pitches = p
     rhythms = r
-    print(r)
+    file = open('beats.txt', 'w')
+    print(r.split())
+    file.write(str(r.split()))
     # print(p)
+    file.close()
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")

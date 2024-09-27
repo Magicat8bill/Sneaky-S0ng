@@ -6,81 +6,72 @@ rhythm = []
 def vertion_1(lete, ryth):
     print('temp')
 
-# print(vertion_1())
-
+# Parse XML file
 s = converter.parse('output.xml')
-# s.show('text')
 p = []
 r = []
 
 for tN in s.recurse().notes:
-    # Extract the pitch name (e.g., 'A4' instead of <music21.pitch.Pitch A4>)
+    # Extract the pitch name and rhythm
     pitch_name = str(tN.pitches[0])
-    p.append(f"{pitch_name}")
-    r.append(f"{tN.duration.quarterLength}")
-    # print(f"{pitch_name}, {tN.duration.quarterLength}")
+    p.append(f'{pitch_name}')
+    r.append(f'{tN.duration.quarterLength}')
 
-p1 = " ".join(p)
-r1 = " ".join(r)
+# Combine pitches and rhythms into strings
+p1 = ' '.join(p)
+r1 = ' '.join(r)
 
+# Remove '4' from pitch names
 original_string = p1
 words = original_string.split()
 modified_words = [word.replace('4', '') for word in words]
 modified_string = ' '.join(modified_words)
 
-# lis = []
-# for i in r1:
-#     if i == '1':
-#         lis.append('q')
-#     if i == '2':
-#         lis.append('h')
-#     if i == '0.5':
-#         lis.append('8')
-#     if i == '4':
-#         lis.append('w')
-#     if i == '0.25':
-#         lis.append('16')
-#     if i == '1.5':
-#         lis.append('.')
-# r1 = ' '.join(lis)
+def remove_consecutive_duplicates(input_list):
+    if not input_list:  # Handle empty list
+        return input_list
 
-# print(modified_string)
-# print(r1)
-r1 = (['h', 'h', '.', 'q', 'w', 'w', 'q', '16'])
+    result = [input_list[0]]  # Start with the first element
+    for i in range(1, len(input_list)):
+        if input_list[i] != input_list[i - 1]:  # Check if current element is different from previous
+            result.append(input_list[i])
+    return result
 
-z = list(zip(modified_string, r1))
+# Example usage
+my_list = ["c", "c", "b", "c"]
+output_list = remove_consecutive_duplicates(my_list)
+print(output_list)
+
+m_w = remove_consecutive_duplicates(modified_words)
+
+# Manually define rhythm notation (this could be improved with a more scalable method)
+r1 = ["16", "w", "w", "q", "16", ".", "w", "w", "w", "q", "16"]
+
+# Zip modified pitch names and rhythm notation together
+z = list(zip(m_w, r1))
 print(z)
-# y = str(z)
-# print(y)
-# x = ", ".join(y)
-# print(x)
-# print(type(x))
 
-pitch_data = [
-    ("A--", 8), ("Cb", "q"), ("G", "w"), ("Fb", 16), ("D#", "h"), ("D", "h"), ("B", 16),
-    ("Bb", "q"), ("A", "h"), ("F#", "q"), ("E", "q"), ("Eb", "h"), ("D", 16), ("Cb", 8),
-    ("D", "w"), ("C", "q"), ("G#", 8), ("D##", "w"), ("Db", 16), ("A", "h"), ("Fb", "w"),
-    ("Ab", "w"), ("A#", "q"), ("C", "h"), ("B##", "w"), ("A", "w"), ("D--", 16),
-    ("Eb", 16), ("Gb", "h"), ("A#", 16), ("Db", 16), ("Cb", "w"), ("Bb", 8), ("E", "."),
-    ("F", "."), ("C", "."), ("A", "."), ("Fb", "."), ("B", "."), ("G#", "."), ("E", "."),
-    ("C#", "."), ("F", "."), ("Ab", "."), ("G", "."), ("Eb", "."), ("Bb", "."), ("G--", "."),
-    ("G##", ".")
-]
-
-# Create separate lists for pitches and durations
-
-
-# Print the lists
-# print(pitch_data[1])
-
-
+# Initialize variables
 work = []
 num = 0
+
+# Define a mapping from num to corresponding letters
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 
+           'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
+           'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8' , '9', ' ']
+
+# Example pitch_data (modify this based on your actual use case)
+pitch_data = [('A--', '8'), ('C-', 'q'), ('G', 'w'), ('F-', '16'), ('D#', 'h'), ('D', 'h'), ('B', '16'), ('B-', 'q'), ('A', 'h'), ('F#', 'q'), ('E', 'q'), ('E', 'h'), ('E-', '16'), ('D', '8'), ('C-', 'w'), ('D', 'q'), ('C', '8'), ('G#', 'w'), ('D##', '16'), ('D-', 'h'), ('A', 'w'), ('F-', 'w'), ('A-', 'q'), ('A#', 'h'), ('C', 'w'), ('B##', '16'), ('A', '8'), ('D--', 'h'), ('E-', 'w'), ('G-', '16'), ('A#', 'q'), ('D-', '16'), ('C-', 'h'), ('B-', '16'), ('E', 'w'), ('F', '8'), ('C', '.'), ('A', '.'), ('F-', '.'), ('B', '.'), ('G#', '.'), ('E', '.'), ('C#', '.'), ('F', '.'), ('A-', '.'), ('G', '.'), ('E-', '.'), ('B-', '.'), ('G--', '.'), ('G##', '.'), ('D', '.')]
+
+# Loop through zipped pitches and rhythms
 for i in z:
-    if i == pitch_data[num] and num == 0:
-        work.append('a')
-    elif i == pitch_data[num] and num == 1:
-        work.append('b')
-    elif i == pitch_data[num] and num == 2:
-        work.append('c')
+    # print(i)
+    if i in pitch_data:
+        y = pitch_data.index(i)
+        work.append(letters[y])
+    # Increment num
     num += 1
+
+
+# Print the final result
+print(' '.join(work))

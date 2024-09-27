@@ -133,6 +133,7 @@ def vertion_1(sentance):
         elif letter == "9":
             pitch.append(nine)
         # Other
+        elif letter == " ":
             pitch.append(space)
         elif letter == ".":
             pitch.append(period)
