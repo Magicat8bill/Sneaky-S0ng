@@ -315,5 +315,6 @@ def vertion_1(sentance):
     # print("Pitches:", p)
     r = ' '.join(rhythm)
     # print("Rhythms:", r)
+    p1 = rhythm
     print(p)
-    return p, r
+    return p, r, p1

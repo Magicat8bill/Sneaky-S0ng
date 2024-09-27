@@ -80,13 +80,12 @@ if __name__ == "__main__":
     sentence = input("Type sentence here: ")
     # pitches = input("Enter pitches (e.g., Db Bb A): ")
     # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
-    p, r = encrypt.vertion_1(sentence)
+    p, r, p1 = encrypt.vertion_1(sentence)
     pitches = p
     rhythms = r
     file = open('beats.txt', 'w')
-    print(r.split())
-    file.write(str(r.split()))
-    # print(p)
+    file.write(str(''.join(p1)))
+    print(r)
     file.close()
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)

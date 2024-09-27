@@ -37,19 +37,17 @@ def remove_consecutive_duplicates(input_list):
             result.append(input_list[i])
     return result
 
-# Example usage
-my_list = ["c", "c", "b", "c"]
-output_list = remove_consecutive_duplicates(my_list)
-print(output_list)
-
 m_w = remove_consecutive_duplicates(modified_words)
 
+file = open('beats.txt', 'r')
+
 # Manually define rhythm notation (this could be improved with a more scalable method)
-r1 = ["16", "w", "w", "q", "16", ".", "w", "w", "w", "q", "16"]
+r1 = list(file.readline())
+print(r1)
 
 # Zip modified pitch names and rhythm notation together
 z = list(zip(m_w, r1))
-print(z)
+# print(z)
 
 # Initialize variables
 work = []
