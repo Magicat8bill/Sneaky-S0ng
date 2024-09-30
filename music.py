@@ -1,5 +1,5 @@
 from music21 import *
-import encrypt
+import ver2
 
 reader = input("Do you have a musicxml reader? Y or N: ")
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     sentence = input("Type sentence here: ")
     # pitches = input("Enter pitches (e.g., Db Bb A): ")
     # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
-    p, r = encrypt.vertion_1(sentence)
+    p, r = ver2.vertion_2(sentence)
     pitches = p
     rhythms = r
     print(r)
