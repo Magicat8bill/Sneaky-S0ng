@@ -327,6 +327,7 @@ def vertion_1(lete, ryth):
 # print(vertion_1())
 
 s = converter.parse('output.xml')
+s.show('text')
 p = []
 r = []
 
@@ -338,8 +339,8 @@ for tN in s.recurse().notes:
     # print(f"{pitch_name}, {tN.duration.quarterLength}")
 p1 = " ".join(p)
 r1 = " ".join(r)
-# print(p1)
-# print(r1)
+print(p1)
+print(r1)
 original_string = p1
 words = original_string.split()
 modified_words = [word.replace('4', '') for word in words]
@@ -373,6 +374,7 @@ for i in r1:
     if i == '1.5':
         lis.append('.')
 r1 = ' '.join(lis)
+print(r1)
 r1 = 'h h . q w w q 16'
 l = r1.split()
 print(l)

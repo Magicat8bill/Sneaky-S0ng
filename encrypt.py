@@ -133,6 +133,7 @@ def vertion_1(sentance):
         elif letter == "9":
             pitch.append(nine)
         # Other
+        elif letter == " ":
             pitch.append(space)
         elif letter == ".":
             pitch.append(period)
@@ -314,5 +315,6 @@ def vertion_1(sentance):
     # print("Pitches:", p)
     r = ' '.join(rhythm)
     # print("Rhythms:", r)
+    p1 = rhythm
     print(p)
-    return p, r
+    return p, r, p1
