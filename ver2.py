@@ -1,7 +1,7 @@
 pitch = []
 rhythm = []
 
-def vertion_1(sentance):
+def vertion_2(sentance):
     def pitches(letter):
         # Letters
         a = "A-- C Gb"
@@ -459,20 +459,41 @@ def vertion_1(sentance):
 
         return rhythm
 
+    def modify_list_of_strings(input_list):
+        modified_list = []
+        
+        # Iterate through each string in the list
+        for string in input_list:
+            notes = string.split()  # Split the string into individual elements
+            last_note = notes[-1]   # Get the last element
+            
+            # Append the last note two more times
+            notes.append(last_note)
+            notes.append(last_note)
+            
+            # Join the modified list back into a string
+            modified_string = ' '.join(notes)
+            modified_list.append(modified_string)
+        
+        return modified_list
+
+
         
     length = len(sentance.split(" "))
     for i in sentance:
         pitches(i)
         beat(i)
-    p = ' '.join(pitch)
+    result = modify_list_of_strings(pitch)
+    p = ' '.join(result)
     # print("Pitches:", p)
-    r = ' '.join(rhythm)
+    result = modify_list_of_strings(rhythm)
+    r = ' '.join(result)
     # print("Rhythms:", r)
     print(p)
     return p, r
 
 
-
+# vertion_2('it works')
 
 
 
