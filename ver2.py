@@ -488,12 +488,12 @@ def vertion_2(sentance):
     # print("Pitches:", p)
     result = modify_list_of_strings(rhythm)
     r = ' '.join(result)
-    # print("Rhythms:", r)
     print(p)
+    # print(r)
     return p, r
 
 
-# vertion_2('it works')
+# vertion_2(' ')
 
 
 
