@@ -96,7 +96,7 @@ if __name__ == "__main__":
     rhythms = r
     print(r)
 
-    output_file = "test_output.xml"
+    output_file = "output.xml"
 
     start_time = time.time()  # Start timing
     exit_code = create_musicxml(pitches, rhythms, output_file)
