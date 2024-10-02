@@ -11,10 +11,13 @@ To use Sneaky S0ng, you need some fundamental programs.
 -  You need to have access to the music21 library
 ___
 ### INSTILATION & GETTING STARTED.
-The installation is easy. You first need to go to Git hub and copy the HTTP to your clipboard
+The installation is easy. You first need to go to GitHub and copy the HTTP/SSH to your clipboard
 ![Screenshot 2024-09-18 145208](https://github.com/user-attachments/assets/ff9936c8-7add-40c5-9343-f2e9e6407c21)
 
-After you have copied the HTTP to your clipboard, you must open up your GitBash or Linux program and Type in. `git clone HTTP`, and you will want to replace the HTTP in `git clone HTTP` with the HTTP link that you copied.
+Another option is to use pip.
+`pip install sneaky-s0ng`
+
+After you have copied the HTTP/SSH to your clipboard, you must open up your GitBash or Linux program and Type in. `git clone HTTP/SSH`, and you will want to replace the HTTP/SSH in `git clone HTTP/SSH` with the HTTP/SSH link that you copied.
 
 ![Screenshot 2024-09-18 145324](https://github.com/user-attachments/assets/7a45f7c6-d41a-4983-8536-b03010999b23)
 ---
