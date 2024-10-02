@@ -7,7 +7,7 @@ ___
 To use sneaky S0ng, you need some fundamental programs. 
 -  This program must be run in Python3
 -  Any musicxml file reader
--  Linux/GitBash needs to be installed
+-  Linux/GitBash needs to be installed 
 -  You need to have access to the music21 library
 ___
 ### INSTILATION & GETTING STARTED.
