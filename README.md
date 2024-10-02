@@ -1,12 +1,12 @@
-# 🎵 Sneaky $0ng 🎵
+# 🎵 $neaky $0ng 🎵
 ___
-Sneaky $0ng is a music cipher that generates a complex song for you, with a secret message hidden inside. Using MuseScore, as we did, or other music-making applications, Sneaky $0ng can generate sheet music, complete with notations and dynamics. 
+$neaky $0ng is a music cipher that generates a complex song for you, with a secret message hidden inside. Using MuseScore, as we did, or other music-making applications, Sneaky $0ng can generate sheet music, complete with notations and dynamics. 
 Although we can't promise that your cipher will sound good when played, it will be tough to decipher. This is due in part to the complex series of beats utilizing different pitches to create a cipher that is almost impossible for most people to crack. 
 ___
 ### REQUIREMENTS.         
-To use sneaky $0ng, you need some fundamental programs. 
+To use $neaky $0ng, you need some fundamental programs. 
 -  This program must be run in Python3
--  Any musicxml file reader
+-  Any musicxml file reader, or a website where you can wright your music.
 -  Linux/GitBash needs to be installed
 -  You need to have access to the music21 library
 ___
@@ -19,12 +19,14 @@ After you have copied the HTTP to your clipboard, you must open up your GitBash 
 ![Screenshot 2024-09-18 145324](https://github.com/user-attachments/assets/7a45f7c6-d41a-4983-8536-b03010999b23)
 ---
 ### USING IT. 
-Once the repository is installed open music.py and run it, type the sentence you want to encrypt into the terminal when prompted. The program will then update the output.xml file with your encrypted sentence. Open the output.xml file with your musicxml reader to view your code in music notation.
+
+Once you have finished installing the repository, you will want to open the file called music.py. To run the program type `python3 music.py`, followed by the sentence that you want to be ciphered inside a pair of parentheses. You will then be asked the question *"Do you have a musicxml reader? Y or N:"* and you need to respond with a `y` or an `n` respectively. **You will need to answer this truthfully to proceed!**
+![image](https://github.com/user-attachments/assets/eb829ab0-91df-404c-bccc-dd4b47bd76fc)
 
 ---
 ### ACCEPTED CHARACTERS
 Accepted characters include all letters of the English language "A - Z", German letters (ä, ö, ü, ß), and all numbers "0 - 9" along with the following: 
-- ` `
+- ` ` (spaces)
 - `,` (commas)
 - `.` (periods)
 - `?` (question marks)
@@ -40,7 +42,7 @@ Accepted characters include all letters of the English language "A - Z", German 
 - `$` (dollar signs)
 - `%` (percent)
 - `"` (quotes)
-- `~` (tilda)
+- `~` (Tilda)
 -  ` (backticks)
 - `@` (AT symbols)
 - `#` (pound)
@@ -54,4 +56,4 @@ Accepted characters include all letters of the English language "A - Z", German 
 - `+` (plus)
 - `=` (equals)
 ---
-  *Note - negative numbers are accepted because of the dashes, but they do not have their distinct cipher.*
+  *Note - negative numbers are accepted because of the dashes but do not have a distinct cipher.*
