@@ -2,7 +2,8 @@ from music21 import *
 from sneaky_s0ng import ver2
 
 reader = input("Do you have a musicxml reader? Y or N: ")
-
+file = open("config.txt", "w") 
+file.close()
 file = open("config.txt", "r+") 
 lines = file.readline().strip()
 if reader.upper() == "Y":
