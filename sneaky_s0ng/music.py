@@ -1,5 +1,5 @@
 from music21 import *
-import ver2
+from sneaky_s0ng import ver2
 
 reader = input("Do you have a musicxml reader? Y or N: ")
 
