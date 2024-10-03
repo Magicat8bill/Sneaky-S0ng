@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='sneaky_s0ng',
-    version='2.0.9-alpha',
+    version='2.0.9-beta',
     description='A Python package for encrypting English and German to music notation.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/magicat8/Sneaky-S0ng',
+    url='https://magicat8.github.io',
     author='Cameron',
     author_email='magicat8bill@gmail.com',
     license='MIT',

@@ -93,7 +93,7 @@ def musicxml_writer(sentence):
     p, r = ver2.vertion_2(sentence)
     pitches = p
     rhythms = r
-    print(r)
+    # print(r)
     # print(p)
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
