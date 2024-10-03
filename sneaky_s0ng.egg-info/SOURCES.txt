@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sneaky_s0ng.egg-info/PKG-INFO
+sneaky_s0ng.egg-info/SOURCES.txt
+sneaky_s0ng.egg-info/dependency_links.txt
+sneaky_s0ng.egg-info/requires.txt
+sneaky_s0ng.egg-info/top_level.txt
