@@ -4,7 +4,7 @@ Sneaky S0ng is a music cipher that generates a complex song for you, with a secr
 Although we can't promise that your cipher will sound good when played, it will be tough to decipher. This is due in part to the complex series of beats utilizing different pitches to create a cipher that is almost impossible for most people to crack. 
 ___
 ### REQUIREMENTS.         
-To use sneaky S0ng, you need some fundamental programs. 
+To use sneaky S0ng, you need some fundamental programs.  
 -  This program must be run in Python3
 -  Any musicxml file reader
 -  Linux/GitBash needs to be installed
