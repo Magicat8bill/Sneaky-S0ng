@@ -1,4 +1,4 @@
-# your_package/__init__.py
+# sneaky_s0ng/__init__.py
 
-from .module1 import function1
-from .module2 import function2
+from .music import musicxml_writer
+from .ver2 import vertion_2

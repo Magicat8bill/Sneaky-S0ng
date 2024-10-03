@@ -86,8 +86,7 @@ def create_musicxml(pitches, rhythms, output_file):
     if reader.upper() == "Y":
         score.show()
 
-if __name__ == "__main__":
-    sentence = input("Type sentence here: ")
+def musicxml_writer(sentence):
     # pitches = input("Enter pitches (e.g., Db Bb A): ")
     # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
     p, r = ver2.vertion_2(sentence)
@@ -98,3 +97,5 @@ if __name__ == "__main__":
     output_file = "output.xml"
     create_musicxml(pitches, rhythms, output_file)
     print(f"MusicXML file created: {output_file}")
+
+
