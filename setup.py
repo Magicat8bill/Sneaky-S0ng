@@ -7,6 +7,8 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://magicat8.github.io',
+    project_urls = "https://github.com/Magicat8bill/Sneaky-S0ng/tree/main",
+
     author='Cameron',
     author_email='magicat8bill@gmail.com',
     license='MIT',
