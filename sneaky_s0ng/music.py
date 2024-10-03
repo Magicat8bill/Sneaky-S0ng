@@ -1,17 +1,17 @@
 from music21 import *
 from sneaky_s0ng import ver2
 
-reader = input("Do you have a musicxml reader? Y or N: ")
-file = open("config.txt", "w") 
-file.close()
-file = open("config.txt", "r+") 
-lines = file.readline().strip()
-if reader.upper() == "Y":
-    if lines != "1":
-        configure.run()
-        file.write("1")
-
 def create_musicxml(pitches, rhythms, output_file):
+    reader = input("Do you have a musicxml reader? Y or N: ")
+    file = open("config.txt", "r+") 
+    file.close()
+    file = open("config.txt", "r+") 
+    lines = file.readline().strip()
+    if reader.upper() == "Y":
+        if lines != "1":
+            configure.run()
+            file.write("1")
+
     """
     Create a MusicXML file from given pitches and rhythms.
 
