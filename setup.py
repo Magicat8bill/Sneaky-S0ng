@@ -3,7 +3,6 @@ from setuptools import setup, find_packages
 setup(
     name='sneaky_s0ng',
     version='2.0.3-beta',
-    packages=find_packages(),
     description='A Python package for encrypting English and German to music notation.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
