@@ -1,7 +1,7 @@
 pitch = []
 rhythm = []
 
-def vertion_2(sentance):
+def version_2(sentance):
     def pitches(letter):
         # Letters
         a = "A-- C Gb"

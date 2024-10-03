@@ -3,14 +3,10 @@ from sneaky_s0ng import ver2
 
 def create_musicxml(pitches, rhythms, output_file):
     reader = input("Do you have a musicxml reader? Y or N: ")
-    file = open("config.txt", "r+") 
-    file.close()
-    file = open("config.txt", "r+") 
-    lines = file.readline().strip()
     if reader.upper() == "Y":
-        if lines != "1":
-            configure.run()
-            file.write("1")
+            config = input("Do you want to configure your musicxml reader? Y or N: ")
+            if config.upper() == "Y":
+                configure.run()
 
     """
     Create a MusicXML file from given pitches and rhythms.
@@ -90,7 +86,7 @@ def create_musicxml(pitches, rhythms, output_file):
 def musicxml_writer(sentence):
     # pitches = input("Enter pitches (e.g., Db Bb A): ")
     # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
-    p, r = ver2.vertion_2(sentence)
+    p, r = ver2.version_2(sentence)
     pitches = p
     rhythms = r
     # print(r)
