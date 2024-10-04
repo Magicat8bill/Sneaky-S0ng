@@ -2,6 +2,10 @@ pitch = []
 rhythm = []
 
 def version_2(sentance):
+    '''
+    Translates a sentence to music notation
+    >>> p, r = ver2.version_2('input')
+    '''
     def pitches(letter):
         # Letters
         a = "A-- C Gb"
