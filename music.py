@@ -86,7 +86,7 @@ def create_musicxml(pitches, rhythms, output_file):
     if reader.upper() == "Y":
         score.show()
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description="Sneaky S0ng - Music Encryption Tool")
     parser.add_argument("sentence", help="The sentence you want to encrypt")
     parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose output (time to encrypt)")
@@ -109,4 +109,6 @@ if __name__ == '__main__':
 
     print(f"MusicXML file created: {output_file}")
     sys.exit(exit_code)
-
+    
+if __name__ == '__main__':
+    main()
