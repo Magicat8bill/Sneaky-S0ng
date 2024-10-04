@@ -24,7 +24,7 @@ Once the repository is installed open music.py and run it, type the sentence you
 ---
 ### ACCEPTED CHARACTERS
 Accepted characters include all letters of the English language "A - Z", German letters (ä, ö, ü, ß), and all numbers "0 - 9" along with the following: 
-- ` `
+- ` ` (spaces)
 - `,` (commas)
 - `.` (periods)
 - `?` (question marks)
