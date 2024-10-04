@@ -1,3 +1,6 @@
+import argparse
+import time
+import sys
 from music21 import *
 from sneaky_s0ng import ver2
 
@@ -83,16 +86,27 @@ def create_musicxml(pitches, rhythms, output_file):
     if reader.upper() == "Y":
         score.show()
 
-def musicxml_writer(sentence):
-    # pitches = input("Enter pitches (e.g., Db Bb A): ")
-    # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
-    p, r = ver2.version_2(sentence)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Sneaky S0ng - Music Encryption Tool")
+    parser.add_argument("sentence", help="The sentence you want to encrypt")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose output (time to encrypt)")
+
+    args = parser.parse_args()
+
+    p, r = ver2.vertion_2(args.sentence)
     pitches = p
     rhythms = r
-    # print(r)
-    # print(p)
-    output_file = "output.xml"
-    create_musicxml(pitches, rhythms, output_file)
-    print(f"MusicXML file created: {output_file}")
+    print(r)
 
+    output_file = "output.xml"
+
+    start_time = time.time()  # Start timing
+    exit_code = create_musicxml(pitches, rhythms, output_file)
+    end_time = time.time()  # End timing
+
+    if args.verbose:
+        print(f"Time taken to create MusicXML: {end_time - start_time:.4f} seconds")
+
+    print(f"MusicXML file created: {output_file}")
+    sys.exit(exit_code)
 
