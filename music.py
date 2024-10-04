@@ -2,7 +2,7 @@ import argparse
 import time
 import sys
 from music21 import *
-from sneaky_s0ng import ver2
+import ver2
 
 def create_musicxml(pitches, rhythms, output_file):
     reader = input("Do you have a musicxml reader? Y or N: ")
@@ -93,10 +93,10 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    p, r = ver2.vertion_2(args.sentence)
+    p, r = ver2.version_2(args.sentence)
     pitches = p
     rhythms = r
-    print(r)
+    # print(r)
 
     output_file = "output.xml"
 
