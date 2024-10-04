@@ -1,2 +1,2 @@
 [console_scripts]
-music = sneaky_s0ng:main
+sneaky_s0ng = music:main
