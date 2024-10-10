@@ -2,14 +2,14 @@
 ___
 
 Sneaky S0ng is a music cipher that generates a complex song for you, with a secret message hidden inside. Using MuseScore, as we did, or other music-making applications, Sneaky $0ng can generate sheet music, complete with notations and dynamics. 
-Although we can't promise that your cipher will sound good when played, it will be tough to decipher. This is due in part to the complex series of beats utilizing different pitches to create a cipher that is almost impossible for most people to crack. 
+Although we can't promise that your cipher will sound good when played, it will be tough to decipher. This is partly due to the complex series of beats utilizing different pitches to create a cipher that is almost impossible for most people to crack. 
 ___
 
 ## Using The Pip Package.
 ### REQUIREMENTS.
-To use the pip package version of Sneaky S0ng you must have the following.
+You must have the following to use the pip package version of Sneaky S0ng.
 - This program must be run in Python 3
-- Any musicxml file reader (musescore for software and flat.io for website reader is recommended)
+- Any musicxml file reader (Musescore for software and flat.io for website reader is recommended)
 - Pip must be installed `python3 -m pip install pip`
 - Sneaky s0ng must be installed `pip install sneaky_s0ng`
 ___
@@ -21,7 +21,7 @@ ___
 ### REQUIREMENTS.         
 To use Sneaky S0ng, you need some fundamental programs. 
 -  This program must be run in Python 3
--  Any musicxml file reader (musescore for software and flat.io for website reader is recommended)
+-  Any musicxml file reader (Musescore for software and flat.io for website reader is recommended)
 -  Linux/GitBash needs to be installed
 -  You need to have access to the music21 library
 ___
@@ -34,7 +34,7 @@ After you have copied the HTTP to your clipboard, you must open up your GitBash 
 ![Screenshot 2024-09-18 145324](https://github.com/user-attachments/assets/7a45f7c6-d41a-4983-8536-b03010999b23)
 ___
 ### USING IT. 
-Once the repository is installed open music.py and run it, type the sentence you want to encrypt into the terminal when prompted. The program will then update the output.xml file with your encrypted sentence. Open the output.xml file with your musicxml reader to view your code in music notation.
+Once the repository is installed open music.py and you have run it, type the sentence you want to encrypt between the pair of parenthacies into the function called `musicxml_wrighter("")` (if you want to know what characters are excepted, look below). The program will then update the output.xml file with your encrypted sentence. you will then be prompted to answer the question `Do you have a musicxml reader? Y or N:`. **YOU NEED TO ANSWER THIS QUESTION TRUTHFULLY TO CONTINUE**, and respond with either a `y` or an `n` respectivly. 
 ___
 ### ACCEPTED CHARACTERS
 Accepted characters include all letters of the English language "A - Z", German letters (ä, ö, ü, ß), and all numbers "0 - 9" along with the following: 
@@ -54,7 +54,7 @@ Accepted characters include all letters of the English language "A - Z", German 
 - `$` (dollar signs)
 - `%` (percent)
 - `"` (quotes)
-- `~` (tilda)
+- `~` (Tilda)
 -  ` (backticks)
 - `@` (AT symbols)
 - `#` (pound)
