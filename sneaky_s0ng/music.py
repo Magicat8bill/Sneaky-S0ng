@@ -84,6 +84,11 @@ def create_musicxml(pitches, rhythms, output_file):
         score.show()
 
 def musicxml_writer(sentence):
+    '''
+    Takes a sentence and encrypts it to music notation 
+    and writes it to musicxml
+    >>> m = music.musicxml_writer('input')
+    '''
     # pitches = input("Enter pitches (e.g., Db Bb A): ")
     # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
     p, r = ver2.version_2(sentence)
