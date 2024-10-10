@@ -8,229 +8,91 @@ def version_2(sentance):
     '''
     def pitches(letter):
         # Letters
-        a = "A-- C Gb"
-        b = "Cb G A Fb G##"
-        c = "G B C# A"
-        d = "Fb A# Cb"
-        e = "G## F#"
-        f = "D E F A"
-        g = "Bb A# C"
-        h = "Bb Cb C A"
-        i = "Db C# A# Fb A#"
-        j = "F# D B#"
-        k = "Cb G--"
-        l = "E## F# A B--"
-        m = "Fb E## G#"
-        n = "A-- Fb G##"
-        o = "Cb Db D#"
-        p = "D# G# E## "
-        q = "Ab A A# Gb G G#"
-        r = "G#  F# Eb"
-        s = "D## D# D Db D--"
-        t = "Db E A# Gb F Gb"
-        u = "C## B B##"
-        v = "Fb G A F## E Db"
-        w = "Ab E F Db"
-        x = "A# Db G## E#"
-        y = "C# Bb Eb A--"
-        z = "B## D E F A##"
-        ä = "F# Bb D-- F##"
-        ö = "A C# B-- Fb D##"
-        ü = "A Bb E-- E##"
-        ß = "A B G E# G--"
+        letters = {"a": "A-- C Gb",
+        "b": "Cb G A Fb G##",
+        "c": "G B C# A",
+        "d": "Fb A# Cb",
+        "e": "G## F#",
+        "f": "D E F A",
+        "g": "Bb A# C",
+        "h": "Bb Cb C A",
+        "i": "Db C# A# Fb A#",
+        "j": "F# D B#",
+        "k": "Cb G--",
+        "l": "E## F# A B--",
+        "m": "Fb E## G#",
+        "n": "A-- Fb G##",
+        "o": "Cb Db D#",
+        "p": "D# G# E## ",
+        "q": "Ab A A# Gb G G#",
+        "r": "G#  F# Eb",
+        "s": "D## D# D Db D--",
+        "t": "Db E A# Gb F Gb",
+        "u": "C## B B##",
+        "v": "Fb G A F## E Db",
+        "w": "Ab E F Db",
+        "x": "A# Db G## E#",
+        "y": "C# Bb Eb A--",
+        "z": "B## D E F A##",
+        "ä": "F# Bb D-- F##",
+        "ö": "A C# B-- Fb D##",
+        "ü": "A Bb E-- E##",
+        "ß": "A B G E# G--",
         # Numbers
-        zero = "Db D## Fb A--"
-        one = "Fb G## A D B"
-        two = "C Db B-- "
-        three = "B# C F A##" 
-        four = "D F Gb C D#"
-        five = "A B C#  G-- A--"
-        six = "B A G E"
-        seven = "A Fb Db E G## " 
-        eight = "E Fb G-- A##"
-        nine = "F-- E# A D## B"
+        "0": "Db D## Fb A--",
+        "1": "Fb G## A D B",
+        "2": "C Db B-- ",
+        "3": "B# C F A##" ,
+        "4": "D F Gb C D#",
+        "5": "A B C#  G-- A--",
+        "6": "B A G E",
+        "7": "A Fb Db E G## " ,
+        "8": "E Fb G-- A##",
+        "9": "F-- E# A D## B",
         # Punctuation/Spaces
-        space = "A F G-- G E Fb F-- D#"
-        comma = "A D## Fb F--"
-        period = "Fb C E Db A##"
-        questionmark = "B D F## Eb"
-        dash = "G# Db F-- A B"
-        exclamation = "E F A-- B# Gb"
-        colon = "C# C Db F# G#"
-        apostrophy = "F D F G-- Ab E#"
-        semicolon = "Ab Fb C## E-- G"
-        open_pern = "G F D A## A B"
-        closed_pern = "Eb E B F A G##"
-        slash = "Bb A Bb D E##"
-        percent = "G## G E D F##"
-        quotes = "D G E-- F# B--"
-        tilda = "E## F-- G A# Bb"
-        back_tick = "D F-- G# A# E"
-        at = "D B E## Ab"
-        pound = "A D-- Gb E#"
-        dollar = "G-- Bb Db A# E"
-        carrot = "Db Gb E# A--"
-        star = "E Fb G A--"
-        underscore = "D Bb E Fb"
-        open_curley_bracket = "D# A B-- F Gb"
-        closed_curley_bracket = "E F-- D## Bb A"
-        open_bracket = "E Gb A-- D#"
-        closed_bracket = "A G Eb F## E#"
-        less_than = "A B F-- Bb"
-        greater_than = "E G# B-- A E C"
-        vert_bar = "C E F-- C#"
-        equals = "E F-- G# C##"
-        plus = "A F E-- C##"
-        and_symbol = "A# Db E F G--"
+        " ": "A F G-- G E Fb F-- D#",
+        ",": "A D## Fb F--",
+        ".": "Fb C E Db A##",
+        "?": "B D F## Eb",
+        "-": "G# Db F-- A B",
+        "!": "E F A-- B# Gb",
+        ":": "C# C Db F# G#",
+        "'": "F D F G-- Ab E#",
+        ";": "Ab Fb C## E-- G",
+        "(": "G F D A## A B",
+        ")": "Eb E B F A G##",
+        "/": "Bb A Bb D E##",
+        "%": "G## G E D F##",
+        '"': "D G E-- F# B--",
+        "~": "E## F-- G A# Bb",
+        "`": "D F-- G# A# E",
+        "@": "D B E## Ab",
+        "#": "A D-- Gb E#",
+        "$": "G-- Bb Db A# E",
+        "^": "Db Gb E# A--",
+        "*": "E Fb G A--",
+        "_": "D Bb E Fb",
+        "{": "D# A B-- F Gb",
+        "}": "E F-- D## Bb A",
+        "[": "E Gb A-- D#",
+        "]": "A G Eb F## E#",
+        "<": "A B F-- Bb",
+        ">": "E G# B-- A E C",
+        "|": "C E F-- C#",
+        "=": "E F-- G# C##",
+        "+": "A F E-- C##",
+        "&": "A# Db E F G--"}
+        
 
 
         # Leters
-        if letter.upper() == "A":
-            pitch.append(a)
-        elif letter.upper() == "B":
-            pitch.append(b)
-        elif letter.upper() == "C":
-            pitch.append(c)
-        elif letter.upper() == "D":
-            pitch.append(d)
-        elif letter.upper() == "E":
-            pitch.append(e)
-        elif letter.upper() == "F":
-            pitch.append(f)
-        elif letter.upper() == "G":
-            pitch.append(g)
-        elif letter.upper() == "H":
-            pitch.append(h)
-        elif letter.upper() == "I":
-            pitch.append(i)
-        elif letter.upper() == "J":
-            pitch.append(j)
-        elif letter.upper() == "K":
-            pitch.append(k)
-        elif letter.upper() == "L":
-            pitch.append(l)
-        elif letter.upper() == "M":
-            pitch.append(m)
-        elif letter.upper() == "N":
-            pitch.append(n)
-        elif letter.upper() == "O":
-            pitch.append(o)
-        elif letter.upper() == "P":
-            pitch.append(p)
-        elif letter.upper() == "Q":
-            pitch.append(q)
-        elif letter.upper() == "R":
-            pitch.append(r)
-        elif letter.upper() == "S":
-            pitch.append(s)
-        elif letter.upper() == "T":
-            pitch.append(t)
-        elif letter.upper() == "U":
-            pitch.append(u)
-        elif letter.upper() == "V":
-            pitch.append(v)
-        elif letter.upper() == "W":
-            pitch.append(w)
-        elif letter.upper() == "X":
-            pitch.append(x)
-        elif letter.upper() == "Y":
-            pitch.append(y)
-        elif letter.upper() == "Z":
-            pitch.append(z)
-        elif letter == "ä":
-            pitch.append(ä)
-        elif letter == "ö":
-            pitch.append(ö)
-        elif letter == "ü ":
-            pitch.append(ü)
-        elif letter == "ß":
-            pitch.append(ß)
-        # Numbers
-        elif letter == "0":
-            pitch.append(zero)
-        elif letter == "1":
-            pitch.append(one)
-        elif letter == "2":
-            pitch.append(two)
-        elif letter == "3":
-            pitch.append(three)
-        elif letter == "4":
-            pitch.append(four)
-        elif letter == "5":
-            pitch.append(five)
-        elif letter == "6":
-            pitch.append(six)
-        elif letter == "7":
-            pitch.append(seven)
-        elif letter == "8":
-            pitch.append(eight)
-        elif letter == "9":
-            pitch.append(nine)
-        # Other
-        elif letter == " ":
-            pitch.append(space)
-        elif letter == ".":
-            pitch.append(period)
-        elif letter == "?":
-            pitch.append(questionmark)
-        elif letter == "-":
-            pitch.append(dash)
-        elif letter == "!":
-            pitch.append(exclamation)
-        elif letter == ":":
-            pitch.append(colon)
-        elif letter == ";":
-            pitch.append(semicolon)
-        elif letter == ",":
-            pitch.append(comma)
-        elif letter == "'":
-            pitch.append(apostrophy)
-        elif letter == '"':
-            pitch.append(quotes)
-        elif letter == "(":
-            pitch.append(open_pern)
-        elif letter == ")":
-            pitch.append(closed_pern)
-        elif letter == "/":
-            pitch.append(slash)
-        elif letter == "$":
-            pitch.append(dollar)
-        elif letter == "%":
-            pitch.append(percent)
-        elif letter == "~":
-            pitch.append(tilda)
-        elif letter == "`":
-            pitch.append(back_tick)
-        elif letter == "@":
-            pitch.append(at)
-        elif letter == "#":
-            pitch.append(pound)
-        elif letter == "^":
-            pitch.append(carrot)
-        elif letter == "&":
-            pitch.append(and_symbol)
-        elif letter == "*":
-            pitch.append(star)
-        elif letter == "_":
-            pitch.append(underscore)
-        elif letter == "{":
-            pitch.append(open_curley_bracket)
-        elif letter == "}":
-            pitch.append(closed_curley_bracket)
-        elif letter == "[":
-            pitch.append(open_bracket)
-        elif letter == "]":
-            pitch.append(closed_bracket)
-        elif letter == "<":
-            pitch.append(less_than)
-        elif letter == ">":
-            pitch.append(greater_than)
-        elif letter == "|":
-            pitch.append(vert_bar)
-        elif letter == "=":
-            pitch.append(equals)
-        elif letter == "+":
-            pitch.append(plus)
+        if letter.isAlpha():
+            pitch.append(letter.lower())
+        else:
+            pitch.append(letter)
+
+
+        
 
         return pitch
 
