@@ -2,7 +2,7 @@ import argparse
 import time
 import sys
 from music21 import *
-from sneaky_s0ng import ver2
+from sneaky_s0ng_old import ver2
 
 def create_musicxml(pitches, rhythms, output_file):
     reader = input("Do you have a musicxml reader? Y or N: ")
@@ -86,14 +86,12 @@ def create_musicxml(pitches, rhythms, output_file):
     if reader.upper() == "Y":
         score.show()
 
-def musicxml_writer(sentence):
+def musicxml_writer(sentence, verbose=False):
     '''
     Takes a sentence and encrypts it to music notation 
     and writes it to musicxml
     >>> m = music.musicxml_writer('input')
     '''
-    # pitches = input("Enter pitches (e.g., Db Bb A): ")
-    # rhythms = input("Enter rhythms (e.g., q h 8 r): ")
     p, r = ver2.version_2(sentence)
     pitches = p
     rhythms = r
@@ -105,7 +103,7 @@ def musicxml_writer(sentence):
     exit_code = create_musicxml(pitches, rhythms, output_file)
     end_time = time.time()  # End timing
 
-    if args.verbose:
+    if verbose:
         print(f"Time taken to create MusicXML: {end_time - start_time:.4f} seconds")
 
     print(f"MusicXML file created: {output_file}")
