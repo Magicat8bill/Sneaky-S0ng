@@ -91,9 +91,6 @@ def version_4(sentance):
         else:
             pitch.append(letters[letter])
 
-
-        
-
         return pitch
 
         
@@ -180,7 +177,6 @@ def version_4(sentance):
         else:
             rhythm.append(letters[letter])
 
-
         return rhythm
 
     def modify_list_of_strings(input_list):
@@ -200,8 +196,6 @@ def version_4(sentance):
             modified_list.append(modified_string)
         
         return modified_list
-
-
         
     length = len(sentance.split(" "))
     for i in sentance:
@@ -209,7 +203,6 @@ def version_4(sentance):
         beat(i)
     result = modify_list_of_strings(pitch)
     p = ' '.join(result)
-    # print("Pitches:", p)
     result = modify_list_of_strings(rhythm)
     r = ' '.join(result)
     print(p)
