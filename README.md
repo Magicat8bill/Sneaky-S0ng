@@ -1,3 +1,7 @@
+> ⚠️ **Attention:** Version 4 is still under development, and documentation for all versions is being modified!
+
+> ⚠️ **Attention:** Version 3 has been discontinued. Use version 2 until version 4 is completed!
+
 # 🎵 Sneaky S0ng 🎵
 ___
 
