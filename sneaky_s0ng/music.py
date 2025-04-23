@@ -5,7 +5,7 @@ def cm(p,r,o):
     s=stream.Score();part=stream.Part();s.append(part);s.insert(0,metadata.Metadata());s.metadata.title='Cypher';s.metadata.composer='$neaky $0ng';m=stream.Measure();m.timeSignature=meter.TimeSignature('4/4');part.append(m)
     rm={'q':1,'h':2,'8':.5,'r':'rest','w':4,'16':.25,'.':1.5}
     for P,R in zip(p.split(),r.split()):
-        d=rm.get(R);
+        d=rm.get(R)
         if not d:print(f"Invalid rhythm: {R}");exit()
         if d=='rest':n=note.Rest();n.quarterLength=1;m.append(n)
         else:
